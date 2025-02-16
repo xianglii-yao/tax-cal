@@ -42,7 +42,7 @@ export default function App() {
         (Number.parseFloat(formData.otherDeductions) || 0)
       
       // Hit the API endpoint
-      const response = await fetch("http://localhost:3000/", {
+      const response = await fetch("https://tax-cal-1t5p.onrender.com/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -71,7 +71,7 @@ export default function App() {
     async function fetchdata(){
       
       
-      const response = await fetch("http://localhost:3000/history", {
+      const response = await fetch("https://tax-cal-1t5p.onrender.com/history", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
